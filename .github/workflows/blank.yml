@@ -27,6 +27,6 @@ jobs:
           type = tcp
           local_ip = 127.0.0.1
           local_port = 8989
-          remote_port = 30132 > frpc.ini
+          remote_port = 30132" > frpc.ini
           setsid ./frpc -c ./frpc.ini &
           sleep 6h
