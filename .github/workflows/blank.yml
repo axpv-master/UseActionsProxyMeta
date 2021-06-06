@@ -24,11 +24,9 @@ jobs:
           server_port = 7000
           token = freefrp.net
           
-          
-          [${{ secrets.ANY }}]
           type = tcp
           local_ip = 127.0.0.1
           local_port = 8989
-          remote_port = 40132 > frpc.ini
+          remote_port = 30132 > frpc.ini
           setsid ./frpc -c ./frpc.ini &
           sleep 6h
